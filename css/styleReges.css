@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/* style.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100vh;
+    background-color: #0e3639;
+    overflow: hidden;
+}
+
+.square {
+    width: 200px;
+    height: 200px;
+    background-color: #0e3639;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.text {
+    color: white;
+    font-size: 24px;
+}
+
+/* .container {
+    width: 600px;
+    justify-content: flex-end;
+    background-color: transparent;
+    padding: 30px;
+    box-shadow: 8px 2px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}*/
+
+
+.split-screen {
+    display: flex;
+}
+
+.right {
+    width: 30%; 
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: white; /* Set the background color as needed */
+    overflow-y: scroll; /* Enable vertical scrolling if content overflows */
+}
+
+
+
+.tab_box {
+    width: 100%;
+    display: flex;
+    /*justify-content: space-around;*/
+    align-items: center;
+    border-bottom: 2px solid rgba(229, 229, 229);
+    position: relative;
+}
+
+.tab_box .tab_btn {
+    font-size: 18px;
+    font-weight: 600;
+    color: #919191;
+    background: none;
+    border: none;
+    padding: 18px;
+    cursor: pointer;
+}
+
+.tab_box .tab_btn.active{
+color: #000;
+}
+
+.content_box {
+    padding: 20px;
+}
+
+.content_box .content {
+    display: none;
+    animation: moving .5s ease;
+}
+
+@keyframes moving {
+    from {transform: translateX(50px);opacity: 0;}
+    to {transform: translateX(0px);opacity: 1;}
+}
+
+
+
+.content_box .content.active{
+    display: block;
+}
+
+.content_box .content h2 {
+    margin-bottom: 10px;
+}
+.line {
+    position: absolute;
+    top: 62px;
+    left: 17;
+    width: 90px;
+    height: 5px;
+    background-color: #0a0a0a;
+    border-radius: 10px; /* Add the missing value for border-radius */
+    transition: all .3s ease-in-out;
+}
+.input-box{
+    width: 330px;
+    box-sizing: border-box;
+  }
+  .input-box header{
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 45px;
+  }
+  .input-field{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 0 10px 0 10px;
+  }
+  .input{
+    height: 45px;
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    outline: none;
+    margin-bottom: 20px;
+    color: #40414a;
+  }
+  .input-box .input-field label{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    pointer-events: none;
+    transition: .5s;
+  }
+  .input-field input:focus ~ label
+     {
+      top: -10px;
+      font-size: 13px;
+    }
+    .input-field input:valid ~ label
+    {
+     top: -10px;
+     font-size: 13px;
+     color: #5d5076;
+   }
+   .input-field .input:focus, .input-field .input:valid{
+    border-bottom: 1px solid #743ae1;
+  }
+  
+/*.content .input-box .input-Sign_in .a{
+
+}*/
+.checkbox-label {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-label h6 {
+    margin-left: 10px; 
+}

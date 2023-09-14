@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/styleReges.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Login</title>
+    <style>
+        .input-field {
+            text-align: center; /* Center the button */
+        }
+
+        
+
+        .submit {
+            background-color: red; /* Set background color to red */
+            color: white; /* Set text color to white */
+            padding: 10px 30px; /* Increase padding for width */
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .social-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 3px; /* Add a gap of 10px between buttons */
+        }
+
+        .social-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .social-button {
+            background-color: #3B5998; /* Facebook blue */
+            color: white;
+            padding: 2px 8px; /* Adjusted padding */
+            border: none;
+            border-radius: 1px; /* Reduced border-radius */
+            margin: 2px;
+            font-size: 8px; /* Reduced font-size */
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+            transition: 0.3s;
+            display: flex;
+            align-items: center;
+        }
+
+        .social-button:hover {
+            opacity: 0.7;
+        }
+
+        /* Customize styles for each social media button */
+        .facebook-button {
+            background-color: #1877f2;
+            width: 90px; /* Adjusted width */
+        }
+
+        .google-button {
+            background-color: #4285f4; /* Google blue */
+            width: 90px; /* Adjusted width */
+        }
+
+        .apple-button {
+            background-color: black;
+            width: 90px; /* Adjusted width */
+        }
+
+        .microsoft-button {
+            background-color: #2f2f2f; /* Microsoft blue */
+            width: 90px; /* Adjusted width */
+        }
+
+        .social-icon {
+            margin-right: 1px; 
+            width: 12px; 
+            height: 12px; 
+            
+        }
+        .btn, .btn-link, .btn-link.hover, .btn-link:hover {
+            text-decoration: none;
+        }
+        .pgn__hyperlink {
+            text-align: start;
+        }
+        .btn-group-sm>.btn, .btn-sm {
+            border-radius: 0;
+            font-size: .875rem;
+            line-height: 1.42858;
+            padding: 0.4375rem 0.75rem;
+        }
+        .btn-link {
+            color: #00688d;
+            font-weight: 400;
+        }
+        .text-body {
+            color: #454545!important;
+        }
+        .p-0 {
+            padding: 0!important;
+        }
+        .mb-4, .my-4 {
+            margin-bottom: 1.5rem!important;
+        }
+        *, :after, :before {
+            box-sizing: border-box;
+        }
+        .medium-yellow-line {
+            transform: rotate(102.02deg);
+        }
+        .medium-yellow-line {
+            border: 3px solid #f0cc00;
+            height: 0;
+            width: 150px;
+            top: 50%;
+            
+        }
+        .mt-1, .my-1 {
+            margin-top: 0.50rem!important;
+        }
+        [dir=ltr] .mr-2, [dir=ltr] .mx-2 {
+            margin-right: 0.5rem!important;
+        }
+        .text-white {
+            color: #fff!important;
+        }
+        .mb-5, .my-5 {
+            margin-bottom: 3rem!important;
+        }
+        .mt-5, .my-5 {
+            margin-top: 3rem!important;
+        }
+        .display-1, .display-2 {
+            font-weight: 700;
+            line-height: 1;
+        }
+        .display-1 {
+            font-size: 3.75rem;
+        }
+        .text-accent-a {
+            color: #03c7e8!important;
+        }
+        .d-inline-block {
+            display: inline-block!important;
+        }
+        *, :after, :before {
+            box-sizing: border-box;
+        }
+        .mb-4, .my-4 {
+            margin-bottom: 1.5rem!important;
+        }
+        .align-items-center {
+            align-items: center!important;
+        }
+        .justify-content-center {
+            justify-content: center!important;
+        }
+        .d-flex {
+            display: flex!important;
+        }
+                /* Increase the font size and padding to make buttons larger */
+        .social-button {
+            font-size: 16px; /* Adjust the font size as needed */
+            padding: 10px 20px; /* Adjust padding as needed */
+        }
+
+        /* Optional: You can adjust the button width and height */
+        .social-button {
+            width: auto; /* Adjust the width as needed */
+            height: auto; /* Adjust the height as needed */
+        }
+        .pgn__hyperlink {
+            text-align: start;
+            background-color: #0000;
+            color: #00688d;
+            text-decoration: none;
+        }
+        .pgn__hyperlink {
+            text-align: start;
+            background-color: #0000;
+            color: #00688d;
+            text-decoration: none;
+            position: relative;
+            display: inline-block;
+        }
+
+        .logo {
+            width: 100px; /* Adjust the width as needed */
+            position: relative;
+            top: 100000;
+            right: auto;
+            transform: translate(50%, -400%);
+        }
+
+        /* Optional: Add padding or margin to create spacing around the logo */
+        .logo-container {
+            padding: 0px;
+        }
+        .social-icon {
+        width: 25px; /* Adjust the width as needed */
+        height: 25px; /* Adjust the height as needed */
+        /* Additional styles, if necessary */
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+    </style>
+    
+</head>
+<body>
+    <div class="split-screen">
+        <a class="pgn__hyperlink default-link standalone-link" href="https://www.edx.org/?_gl=1*jc2wy5*_ga*MTg4MzExODI4NS4xNjk0NTUwNTUz*_ga_D3KS4KMDT0*MTY5NDU1NTA3OS4yLjEuMTY5NDU1ODI1MS40Ny4wLjA." target="_self"><img alt="edX" src="./image/image.png" class="logo"></a>
+        <div class="d-flex align-items-center">
+            <div class="medium-yellow-line mr-2"></div>
+            <h1 class="display-1 text-white mt-5 mb-5">
+                <span>Start learning</span>
+                <span class="text-accent-a d-inline-block">with edX</span>
+            </h1>
+        </div>
+        <div class="right">
+            <div class="container">
+                <div class="tab_box">
+                    <button class="tab_btn active">Register</button>
+                    <button class="tab_btn">Sign in</button>
+                    <div class="line"></div>
+                </div>
+                <div class="content_box">
+                    <div class="content active">
+                        <div class="input-box">
+                            <div class="input-box">
+                                <div class="input-field">
+                                    <input type="text" class="input" id="fullname" required="" autocomplete="off">
+                                    <label for="fullname">Full Name</label>
+                                </div>
+                                <div class="input-field">
+                                    <input type="text" class="input" id="email" required="" autocomplete="off">
+                                    <label for="email">Email</label> 
+                                </div>
+                                <div class="input-field">
+                                    <input type="text" class="input" id="username" required="" autocomplete="off">
+                                    <label for="username">Public Username</label>
+                                </div>
+                                <div class="input-field">
+                                    <input type="password" class="input" id="password" required="">
+                                    <label for="password">Password</label>
+                                </div>
+                                <div class="input-field">
+                                    <select id="country" name="country">
+                                        <option value="your_country" selected>Your Country</option>
+                                        <option value="USA">United States</option>
+                                        <option value="Canada">Canada</option>
+                                        <option value="UK">United Kingdom</option>
+                                        <!-- Add more countries as needed -->
+                                    </select>
+                                </div><br><br>
+                                <label for="marketing-agreement" class="checkbox-label">
+                                    <input type="checkbox" id="marketing-agreement" name="marketing-agreement">
+                                    <h6>Agree that edX may send me marketing messages</h6>
+                                </label><br><br>
+                                <div class="account-agreement">
+                                    <h6><p>By creating an account, you agree to the <a href="terms-of-service .html">Terms of Service and Honor Code </a>  <a href="honor-code.html"></a> and you acknowledge that edX and each Member process your personal data in accordance with the <a href="privacy-policy.html">Privacy Policy</a>.</p></h6>
+                                </div><br><br>
+                                <form method="post" action="./enorll.html">
+                                    <div class="input-field">
+                                        <input type="submit" class="submit" value="Create an account for free">
+                                    </div>
+                                </form>
+                                <br>
+                                <div class="registration-options">
+                                    <h3><p>Or register with:</p></h3>
+                                    <div class="social-container">
+                                        <div class="social-group">
+                                            <a href="https://www.apple.com" class="social-button apple-button">
+                                                <img src="./image/Apple.ico" alt="Apple Icon" class="social-icon">
+                                                Apple
+                                            </a>
+                                            <a href="https://www.facebook.com" class="social-button facebook-button">
+                                                <img src="./image/Facebook.ico" alt="Facebook Icon" class="social-icon">
+                                                Facebook
+                                            </a>
+                                
+                                            
+                                        </div>
+                                
+                                        <div class="social-group">
+                                            <a href="https://www.google.com" class="social-button google-button">
+                                                <img src="./image/Google.ico" alt="Google Icon" class="social-icon">
+                                                Google
+                                            </a>
+                                
+                                            <a href="https://www.microsoft.com" class="social-button microsoft-button">
+                                                <img src="./image/Microsoft.ico" alt="Microsoft Icon" class="social-icon">
+                                                Microsoft
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div><br><br>
+                            </div>  
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="input-box">
+                            <div class="input-field">
+                                <input type="text" class="input" id="Username or email" required="" autocomplete="off">
+                                <label for="Username or email">Username or email</label>
+                            </div>
+                            <div class="input-field">
+                                <input type="password" class="input" id="password" required="">
+                                <label for="password">Password</label>
+                            </div>
+                            <form method="post" action="./enorll.html">
+                                <div class="input-Sign_in">
+                                    <input type="submit" class="submit" value="sign in">
+                                    <a id="forgot-password" name="forgot-password" class="btn btn-link font-weight-500 text-body" href="https://authn.edx.org/reset">Forgot password</a>
+
+                                </div>
+                            </form><br>
+
+                            <div class="sign in-options">
+                                <h3><p>Or sign in with:</p></h3><br>
+                                <a class="pgn__hyperlink default-link standalone-link btn btn-link btn-sm text-body p-0 mb-4" href="https://courses.edx.org/enterprise/login?_gl=1*4s0w6*_ga*MTg4MzExODI4NS4xNjk0NTUwNTUz*_ga_D3KS4KMDT0*MTY5NDU1NTA3OS4yLjEuMTY5NDU1NTA4OS41MC4wLjA." target="_self">
+                                    <span class="pgn__icon institute-icon">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" focusable="false" aria-hidden="true">
+                                            <path d="M4 10v7h3v-7H4Zm6 0v7h3v-7h-3ZM2 22h19v-3H2v3Zm14-12v7h3v-7h-3Zm-4.5-9L2 6v2h19V6l-9.5-5Z" fill="currentColor"></path>
+                                        </svg>
+                                    </span>
+                                    Company or school credentials
+                                </a><br>
+                                <div class="social-container">
+                                    <div class="social-group">
+                                        <a href="https://www.apple.com" class="social-button apple-button">
+                                            <img src="./image/Apple.ico" alt="Apple Icon" class="social-icon">
+                                            Apple
+                                        </a>
+                                        <a href="https://www.facebook.com" class="social-button facebook-button">
+                                            <img src="./image\Facebook.ico" alt="Facebook Icon" class="social-icon">
+                                            Facebook
+                                        </a>
+                            
+                                        
+                                    </div>
+                            
+                                    <div class="social-group">
+                                        <a href="https://www.google.com" class="social-button google-button">
+                                            <img src="./image\Google.ico" alt="Google Icon" class="social-icon">
+                                            Google
+                                        </a>
+                            
+                                        <a href="https://www.microsoft.com" class="social-button microsoft-button">
+                                            <img src="./image\Microsoft.ico" alt="Microsoft Icon" class="social-icon">
+                                            Microsoft
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const tabs = document.querySelectorAll('.tab_btn');
+        const allContent = document.querySelectorAll('.content');
+
+        tabs.forEach((tab, index) => {
+            tab.addEventListener('click', (e) => {
+                tabs.forEach(tab => {tab.classList.remove('active')});
+                tab.classList.add('active');
+                var line = document.querySelector('.line');
+                line.style.width = e.target.offsetWidth + "px";
+                line.style.left = e.target.offsetLeft + "px";
+                allContent.forEach(content => {content.classList.remove('active')});
+                allContent[index].classList.add('active');
+            });
+        });
+    </script>
+    
+    <svg class="ml-n1 w-75 h-200 large-screen-svg-primary" preserveAspectRatio="xMaxYMin meet" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+        <!-- Background Rect (reverse skew direction) -->
+        
+        <rect x="0" y="0" width="75" height="100" fill="white"></rect>
+    
+            
+        <g transform="skewX(171.6)"> <!-- Change the skew direction -->
+            <rect x="0" y="0" height="100%" width="25%" fill="#0e3639"></rect> <!-- Reduce width to 50% -->
+        </g>
+    </svg>
+    <!--  <div class="diagonal-stick"></div> -->
+   
+</body>
+</html>
